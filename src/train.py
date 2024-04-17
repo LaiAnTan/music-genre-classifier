@@ -84,4 +84,4 @@ model.fit(features_train, label_train, epochs=200, batch_size=32, validation_dat
 loss, accuracy = model.evaluate(features_test, label_test)
 print(f'Accuracy: {accuracy*100}%')
 
-model.save("model.keras")
+model.save("../models/model.keras")
