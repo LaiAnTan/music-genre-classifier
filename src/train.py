@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tf import keras
+keras = tf.keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, TextVectorization, Normalization
 from keras.callbacks import EarlyStopping
@@ -13,7 +13,7 @@ import platform
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
 # Loading dataset 
-data = pd.read_csv('./data/raw.csv')
+data = pd.read_csv('../data/raw.csv')
 data = data.dropna()
 
 # Scaling and normalizing the data
